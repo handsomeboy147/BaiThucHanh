@@ -1,33 +1,28 @@
 import java.util.Scanner;
 
-
 public class hinhTron {
     final float Pi = 3.14f;
     float r;
-    float cv;
-    float dt;
+    float dt, cv;
 
-    public void nhapBanKinh()
-    {
+    void nhapBankinh() {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Nhap ban kinh r: "); r = sc.nextFloat();
-    sc.close();
+        System.out.print(" Nhập bán kính hình tròn: ");
+        r = sc.nextFloat();
     }
 
-    public void tinhChuvi()
-    {
+    void tinhChuVi() {
         cv = 2 * r * Pi;
-    }    
+    }
 
-    public void tinhDienTich()
-    {
+    void tinhDientich() {
         dt = r * r * Pi;
-    }
-
-    public void inThongso()
-    {
-        System.out.printf("Chu vi cua hinh tron co r = %f la: %f",r,cv);
-        System.out.printf("\nDien tich cua hinh tron co r = %f la: %f",r,dt);
 
     }
+
+    void inKetQua(String name) {
+        System.out.printf("chu vi của hình tròn %s ban kính %f = %f", name, r, cv);
+        System.out.printf("\ndiện tích của hình tròn %s ban kính %f = %f", name, r, dt);
+    }
+
 }

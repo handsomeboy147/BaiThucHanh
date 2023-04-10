@@ -1,25 +1,27 @@
 import java.util.Scanner;
 
 public class sinhVien {
-    String hoten, gioitinh;
-    int namsinh, tuoi;
+    String ten;
+    int tuoi, namsinh;
+    String gioitinh;
 
-    public void nhapThongTinSv()
-    {
+    public void nhapThongtin() {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Nhap ho ten sinh vien: "); hoten = sc.nextLine();
-        System.out.print("Nhap nam sinh: "); namsinh = sc.nextInt();
-        System.out.print("Nhap gioi tinh: "); gioitinh = sc.next();
-    sc.close();
+        System.out.println("Vui lòng nhập tên: ");
+        ten = sc.nextLine();
+        System.out.println("Vui lòng nhập năm sinh : ");
+        namsinh = sc.nextInt();
+        System.out.println("Vui lòng nhập giới tính: ");
+        gioitinh = sc.next();
     }
 
-    public void tinhTuoi()
-    {
+    public void Tuoi() {
         tuoi = 2023 - namsinh;
     }
 
-    public void inThongTinSv()
-    {
-        System.out.printf("\nSinh vien vua nhap co thong tin la:\nHo ten: %s\nNam sinh: %d\nTuoi: %d\nGioi tinh: %s", hoten, namsinh, tuoi, gioitinh);
+    void InThongTin() {
+        System.out.print("Thông tin student vừa nhập là: ");
+        System.out.printf("\nTên: %s \nTuổi: %d \nGiới tính: %s", ten, tuoi, gioitinh);
     }
+
 }
