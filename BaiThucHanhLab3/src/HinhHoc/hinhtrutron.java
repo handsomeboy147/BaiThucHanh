@@ -1,10 +1,12 @@
+package HinhHoc;
+
 import java.util.Scanner;
 
 public class hinhtrutron {
     final float PI = 3.14f;
     float r, h, cv, dt, v;
 
-    void NhapBanKinh() {
+    public void NhapBanKinh() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Nhập bán kính hình trụ tròn: ");
         r = sc.nextFloat();

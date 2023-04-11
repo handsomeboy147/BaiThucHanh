@@ -1,3 +1,5 @@
+package Person;
+
 import java.util.Scanner;
 
 public class sinhVien {
@@ -19,7 +21,7 @@ public class sinhVien {
         tuoi = 2023 - namsinh;
     }
 
-    void InThongTin() {
+    public void InThongTin() {
         System.out.print("Thông tin student vừa nhập là: ");
         System.out.printf("\nTên: %s \nTuổi: %d \nGiới tính: %s", ten, tuoi, gioitinh);
     }
