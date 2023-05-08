@@ -1,6 +1,4 @@
 package HinhHoc;
 
-public class hinhvuong {
-    public class hinhVuong extends hinhchunhat {
-    }
+public class hinhvuong extends hinhchunhat {
 }

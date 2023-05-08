@@ -2,6 +2,7 @@
 import java.util.Scanner;
 
 import HinhHoc.hinhTron;
+import HinhHoc.hinhTron2;
 import HinhHoc.hinhchunhat;
 import HinhHoc.hinhtrutron;
 import HinhHoc.hinhvuong;
@@ -11,18 +12,18 @@ public class App {
         Scanner sc = new Scanner(System.in);
         int chon;
         System.out.printf(
-                "\n1. Hình tròn \n2. Student \n3. Hình trụ tròn \n4. Nhân viên \n5. Hinh Chu Nhat \n6. Hinh Vuong \nVui lòng chọn: ");
+                "\n1. Hinh tron \n2. Hinh tru tron \n3. Hinh Chu Nhat \n4. Hinh Vuong \n5. Hinh tron 2 \nVui long chon: ");
         chon = sc.nextInt();
         switch (chon) {
             case 1:
                 hinhTron ht = new hinhTron();
-                ht.nhapBankinh();
+                ht.nhapBankinh(6);
                 ht.tinhChuVi();
                 ht.tinhDientich();
                 ht.inKetQua("tam I1");
                 break;
 
-            case 3:
+            case 2:
                 hinhtrutron htt = new hinhtrutron();
                 htt.NhapBanKinh();
                 htt.chuvi();
@@ -31,7 +32,7 @@ public class App {
                 htt.inthongtin();
                 break;
 
-            case 5:
+            case 3:
                 hinhchunhat hcn = new hinhchunhat();
                 hcn.nhapChieuDai();
                 hcn.nhapChieuRong();
@@ -39,7 +40,7 @@ public class App {
                 hcn.tinhDientich();
                 hcn.inChuVi();
                 hcn.inDienTich();
-            case 6:
+            case 4:
                 hinhvuong hv = new hinhvuong();
                 hv.nhapChieuDai();
                 hv.nhapChieuRong();
@@ -47,10 +48,14 @@ public class App {
                 hv.tinhDientich();
                 hv.inChuVi();
                 hv.inDienTich();
+            case 5:
+                hinhTron2 ht2 = new hinhTron2();
+                ht2.tinhChuVi();
+                ht2.tinhDienTich();
+
             default:
                 System.out.println("vui long chon lai");
                 break;
         }
-
     }
 }

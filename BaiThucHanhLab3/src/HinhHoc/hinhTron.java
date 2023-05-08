@@ -7,24 +7,21 @@ public class hinhTron {
     float r;
     float dt, cv;
 
-    public void nhapBankinh() {
-        Scanner sc = new Scanner(System.in);
-        System.out.print(" Nhập bán kính hình tròn: ");
-        r = sc.nextFloat();
+    public void nhapBankinh(float r) {
+        this.r = r;
     }
 
-    public void tinhChuVi() {
+    public float tinhChuVi() {
         cv = 2 * r * Pi;
     }
 
-    public void tinhDientich() {
+    public float tinhDientich() {
         dt = r * r * Pi;
 
     }
 
     public void inKetQua(String name) {
-        System.out.printf("chu vi của hình tròn %s ban kính %f = %f", name, r, cv);
-        System.out.printf("\ndiện tích của hình tròn %s ban kính %f = %f", name, r, dt);
+        System.out.printf("chu vi cua hinh tron %s ban kinh %f = %f", name, r, cv);
+        System.out.printf("\ndien tich cua hinh tron %s ban kinh %f = %f", name, r, dt);
     }
-
 }
