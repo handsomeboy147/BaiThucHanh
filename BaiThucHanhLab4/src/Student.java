@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.text.Format;
 import java.util.ArrayList;
 
 public class Student {
@@ -6,6 +7,11 @@ public class Student {
     String Fullname;
     int Age;
 
-    public static void Insert (List Student; int n ){
-        System.out.println("Nhap vao so phan tu: ");
+    public void NhapThongTinsv()
+    {
+        Scanner sc = new Scanner(System.in)
+        System.out.println("FullName: "); FullName = sc.nextLine();
+        System.out.println("Age: "); FullName = sc.nextLine();
     }
+
+}
